@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # build-in imports
 import sys
 from argparse import ArgumentParser
