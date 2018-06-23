@@ -13,3 +13,9 @@ How to run it:
 __author__ = 'Bahram Aghaei'
 __email__ = "aghaee.bahram@gmail.com"
 __version__ = '0.1.0'
+
+from .core import formal_greeting, informal_greeting
+
+__all__ = [
+        'formal_greeting', 'informal_greeting',
+        ]

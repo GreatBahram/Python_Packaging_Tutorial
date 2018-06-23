@@ -3,7 +3,7 @@ import sys
 from argparse import ArgumentParser
 
 # third-party imports
-from funproject.core import formal_greeting, informal_greeting
+from funproject import formal_greeting, informal_greeting
 
 description="""
 usage: funproject [-h] formal informal
