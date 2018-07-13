@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 # third-party imports
 from funproject import formal_greeting, informal_greeting
 
-description="""
+DESCRIPTION="""
 usage: funproject [-h] formal informal
 
 Basic Command-line for funproject program
@@ -29,7 +29,7 @@ def get_message(greeting_type):
     elif greeting_type == 'informal':
         message = informal_greeting()
     else:
-        return description
+        return DESCRIPTION
     return message
 
 
@@ -42,7 +42,7 @@ def main():
 
     arguments_list = sys.argv
     if number_of_arguments != 2:
-        print(description)
+        print(DESCRIPTION)
         sys.exit(1)
     second_argument = arguments_list[1]
     message = get_message(second_argument)
